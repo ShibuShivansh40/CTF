@@ -1,0 +1,14 @@
+Author: susie
+Description
+
+Files can always be changed in a secret way. Can you find the flag? cat.jpg
+
+Hint - 1 : Look at the details of the file
+
+Hint - 2 : Make sure to submit the flag as picoCTF{XXXXX}
+
+When you open the file in using : "nano cat.jpg"
+
+In the resource id you will found something base64 encoded : "cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9"
+
+Hence the conversion will give you : "picoCTF{the_m3tadata_1s_modified}"

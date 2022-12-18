@@ -1,0 +1,46 @@
+Author: LT 'syreal' Jones
+Description
+
+Unzip this archive and find the file named 'uber-secret.txt'
+
+    Download zip file
+
+Hint : none
+
+
+First, apporach always remains bruteforcing. I opened every file but it was too cumbersome but didn't get any result.
+
+I found the following commands on : https://seekfast.org/blog/search-text-in-documents/how-to-search-text-in-multiple-files-in-linux/
+
+1. Make the search case-insensitive with the "-i" option:
+grep -i 'searched-word' filename
+
+ 
+2. Search recursively in all files in a given directory with the "-r" option:
+grep -ir 'searched-word' '/directory'
+
+ 
+3. Search whole words only with the "-w" option:
+grep -irw 'searched-word' '/directory'
+
+ 
+4. Print the line numbers in which the searched word was found with the "-n" option:
+grep -irwn 'searched-word' '/directory'
+
+ 
+5. Search for multiple words syntax:
+grep -ir 'word1|word2|word3' '/directory'
+
+But still there was no file named uber-secret.txt.
+
+As I was searching hidden files I found something.
+
+In a walkthrough I saw another approach, the previous one was the bruteforce one only.
+
+Use "locate" tool to search, we can install it using : "sudo apt install locate"
+
+THen we will update the database, using : "updatedb"
+
+And then we will locate the file "uber-secret.txt". And boom we found the address of the file : "/root/Downloads/PicoCTF/files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets/uber-secret.txt"
+
+Now, we will open it and find the flag :  picoCTF{f1nd_15_f457_ab443fd1}

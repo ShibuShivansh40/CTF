@@ -1,0 +1,12 @@
+Author: Sanjay C/Danny Tunitis
+Description
+
+Using netcat (nc) is going to be pretty important. Can you connect to jupiter.challenges.picoctf.org at port 64287 to get the flag?
+
+Hint - 1 : nc tutorial
+
+First, to get the IP Address of the website I used the command : "ping jupiter.challenges.picoctf.org"
+
+Then I used netcat using simple command at port number 64287 : "nc 3.131.60.8 64287"
+
+The flag is : picoCTF{nEtCat_Mast3ry_284be8f7}

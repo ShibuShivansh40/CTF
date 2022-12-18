@@ -1,0 +1,17 @@
+Author: LT 'syreal' Jones
+Description
+
+Fix the syntax error in this Python script to print the flag. Download Python script
+
+Hint - 1 : Indentation is very meaningful in Python
+
+Hint - 2 : To view the file in the webshell, do: $ nano fixme1.py
+
+Hint - 3 : To exit nano, press Ctrl and x and follow the on-screen prompts.
+
+Hint - 4 : The str_xor function does not need to be reverse engineered for this challenge.
+
+The identation on last line for print command was wrong. Just delte the whitesapces you are googd to go.
+
+Just, follow the instructions, by correcting the code and you will get the flag : picoCTF{1nd3nt1ty_cr1515_09ee727a}
+

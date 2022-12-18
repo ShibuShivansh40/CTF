@@ -1,0 +1,36 @@
+Author: Sanjay C/Danny T
+Description
+
+What does this bDNhcm5fdGgzX3IwcDM1 mean? I think it has something to do with bases.
+
+
+Hint - 1 : Submit your answer in our flag format. For example, if your answer was 'hello', you would submit 'picoCTF{hello}' as the flag.
+
+Try - 1 : 
+
+I used https://crackstation.net/ to crack the hash, but I wasn't able to through this website.
+
+Try - 2 :
+
+On changing its base form 36 to 10 (DECIMAL) I got this : 4225327600134054782107423795177
+But this came out to be wrong.
+
+3AL652A86KJDQHP4M5PV9 --> Base 32
+
+3554C512906A4DBA8E4962E7E9 -> Base 16
+
+6525142422440651155650711130563751 --> Base 8
+
+At each base it is coming out to be different, and that is obvious but we in the end know its a BASE 36 hash.
+
+Try -3 :
+I used dcode.fr/base-36-cipher to crack it but found false statement : 406043452319644405839504606075
+
+Try -4 :
+
+Another site showed me something new about DECIMAL Conversion : 4225327600134055242248628420800
+
+Try - 5:
+In a write up I found that it is base 64, I was searching for Base 36 as its conversion.
+
+And I finally found the flag : picoCTF{l3arn_th3_r0p35}

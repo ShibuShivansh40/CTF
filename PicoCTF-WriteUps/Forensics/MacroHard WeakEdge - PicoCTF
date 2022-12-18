@@ -1,0 +1,35 @@
+Author: madStacks
+Description
+
+I've hidden a flag in this file. Can you find it? Forensics is fun.pptm
+
+So, first we got a .pptm as a file.
+
+"A file with the PPTM file extension is a Microsoft PowerPoint Open XML Macro-Enabled Presentation file. They're comprised of pages called slides that hold text, media files like images and videos, graphs, and other things pertinent to a presentation."
+
+Source - https://www.lifewire.com/pptm-file-2622189
+
+Hence it is a PowerPoint based XML. We will find a way to find to open this XML.
+
+When I opened the file in Sublime, it showed me some hex or values like that.
+
+I converted it to a PDF and nothing was visible except the title of the Project "Forensics is Fun"
+
+Then I converted it to txt and I found the title and some giberrish.
+
+Then I converted it to JPEG and I got 57 jpegs which a numerous number to check.
+
+I need to find another way to solve it.
+
+Now I will first try to open it.
+
+I tried to open it on Google Slides and found on Slide 37 there is a sentence written as : Not the flag :(
+
+Hence there might be something that I am unable to find till now.
+
+But a strange thing is that, it is not visible in the jpegs we created hence it was hidden in the slideshow
+
+When I read the image 10 I found only giberrish in there.
+
+So I thought a jepg would be containing some Flag or somthing using Steganography. So I unzipped slide 37 jpeg but it wasn't zipped
+

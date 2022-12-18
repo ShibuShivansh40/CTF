@@ -1,0 +1,12 @@
+Author: Sanjay C/Danny Tunitis
+Description
+
+Can you convert the number 42 (base 10) to binary (base 2)? 
+
+Hint - 1 : Submit your answer in our competition's flag format. For example, if your answer was '11111', you would submit 'picoCTF{11111}' as the flag.
+
+42 = 32 + 8 + 2
+   = 2^5 + 2^3 + 2^1
+   = 101010
+
+Hence the flag is : picoCTF{101010}

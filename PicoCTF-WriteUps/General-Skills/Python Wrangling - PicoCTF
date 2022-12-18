@@ -1,0 +1,22 @@
+Author: syreal
+Description
+
+Python scripts are invoked kind of like programs in the Terminal... Can you run this Python script using this password to get the flag?\
+
+
+Hint - 1 : Get the Python script accessible in your shell by entering the following command in the Terminal prompt: $ wget https://mercury.picoctf.net/static/2ac2139344d2e734d5d638ac928f1a8d/ende.py
+
+Hint - 2 : $ man python
+
+
+I just used Hint 1 to download that file and now I will be checking the working of Python Script
+
+This was to easy, just use the command : "python ende.py --help"
+
+Now you will get a direct command to type to get the flag, then use : "python ende.py -d flag.txt.en"
+
+And then you will see a response as : "Enter the password : "
+
+Just type in what you got in your pw.txt file
+
+And bang, you get your flag, i.e. : picoCTF{4p0110_1n_7h3_h0us3_68f88f93}

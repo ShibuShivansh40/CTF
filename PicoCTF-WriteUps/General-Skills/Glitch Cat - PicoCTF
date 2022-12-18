@@ -1,0 +1,19 @@
+Author: LT 'syreal' Jones
+Description
+
+Our flag printing service has started glitching! $ nc saturn.picoctf.net 53933
+
+Hint - 1 : ASCII is one of the most common encodings used in programming
+
+Hint - 2 : We know that the glitch output is valid Python, somehow!
+
+Hint - 3 : Press Ctrl and c on your keyboard to close your connection and return to the command prompt.
+
+On executing the command "nc saturn.picoctf.net 53933", the thing I found was 'picoCTF{gl17ch_m3_n07_' + chr(0x61) + chr(0x34) + chr(0x33) + chr(0x39) + chr(0x32) + chr(0x64) + chr(0x32) + chr(0x65) + '}'
+
+
+a4392d2e
+
+This was my decoding form the following code using the Table of ASCII which, you can found on http://www.csc.villanova.edu/~tway/resources/ascii-table.html
+
+Hence the CTF becomes : picoCTF{gl17ch_m3_n07_a4392d2e}

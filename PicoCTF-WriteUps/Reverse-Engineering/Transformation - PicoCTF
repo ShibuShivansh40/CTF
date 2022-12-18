@@ -1,0 +1,41 @@
+Author: madStacks
+Description
+
+I wonder what this really is... enc ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
+Hint - 1 : You may find some decoders online
+
+I just googled it what this is, so see what I just found : "https://blog.gregscharf.com/2021/03/27/character-packing/"
+
+I just found a random code down below : 
+#!/usr/bin/python3
+ 
+def unpack(encoded_flag):
+    flag = ""
+    for packed_char in encoded_flag:
+        start_int = ord(packed_char) #get the integer value of the packed unicode character
+        highChar = ord(packed_char)>>8  #bit shift the integer 8 bits to the right, which in essence divides by 256
+        flag += chr(highChar)
+        lowChar = start_int - (highChar<<8) #difference between sum of 2 packed characters, and the first character multiplied by 256 or <<8
+        lowChar = ord(packed_char)%256 #or you could simply use the modulus operator to get the remainder, which will be the lower char
+        # explanation for retrieving lowChar.  If you multiple a number by 256 
+        # and then add another number that is less than 256, 
+        # the number added will always be the remainder when dividing the 
+        # sum of those two numbers by 256.
+        flag += chr(lowChar)
+    print(flag)
+ 
+def pack(flag):
+    if(len(flag)%2):  #must be divisible by 2 since two chars are packed into a single char during encoding
+        flag+=" "     #add blank space for padding
+    encoded_flag = ''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+    print(encoded_flag)
+    return encoded_flag
+ 
+ 
+flag = "This is the text that will be packed"
+enc = pack(flag)
+unpack(enc)
+
+I thought to use it, but found that I would directly get the answer so, I left it and found another method to find it
+

@@ -1,0 +1,12 @@
+Author: LT 'syreal' Jones
+Description
+
+Can you crack the password to get the flag? Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+Hint - 1 : Does that encoding look familiar?
+
+Hint - 2 : The str_xor function does not need to be reverse engineered for this challenge.
+
+Now here when I opened the code, I found some ASCIIs codes to get the password. I used the Table of ASCII to get the values and the password was "4ec9".
+
+Enter the password and you will get the flag as : picoCTF{tr45h_51ng1ng_9701e681}

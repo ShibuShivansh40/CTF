@@ -1,0 +1,21 @@
+from pwn import *
+conn  = remote('mercury.picoctf.net', 11188)
+print(conn.recvuntil('What data would you like to encrypt?'))
+
+remaining_bytes = 50000 - 32    # flag is 32 bytes
+while remaining_bytes >= 1000:
+    print('[+] Sending 1000 bytes...')
+    conn.send('a' * 1000 + '\r\n')
+    remaining_bytes -= 1000
+    conn.recvuntil('What data would you like to encrypt?')
+
+print(f'[+] Sending {remaining_bytes} bytes...')
+conn.send('a' * remaining_bytes + '\r\n')
+print(conn.recvuntil('What data would you like to encrypt?'))
+
+print(f'[+] Key offset is at 0. Sending bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb...')
+conn.send('b' * 32 + '\r\n')
+print(conn.recvuntil('What data would you like to encrypt?'))
+
+conn.close()
+print("Done")

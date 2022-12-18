@@ -1,0 +1,23 @@
+Author: syreal
+Description
+
+Do you know how to move between directories and read files in the shell? Start the container, `ssh` to it, and then `ls` once connected to begin. Login via `ssh` as `ctf-player` with the password, `6dee9772`
+
+Hint - 1 : Finding a cheatsheet for bash would be really helpful!
+
+Now first I have started the instance.
+
+It basically asks us to use the ssh login by the command : "ssh ctf-player@venus.picoctf.net -p 60376"
+
+Now enter the passworrd : ""
+
+And then a remote shell has been opened in front of you.
+
+Use the command "ls" and you get the first portion of flag, by using "cat 1of3.flag.txt" : picoCTF{xxsh_
+
+And then find the instruction to find 2 of 3 and now you need to go to the root and you will find the flag as "2of3.flag.txt" : 0ut_0f_\/\/4t3r_
+
+And in the similar way you can find the third flag with the help of file "instructions-to-3of3.txt" : 540e4e79}
+
+And hence the flag is : picoCTF{xxsh_0ut_0f_\/\/4t3r_540e4e79}
+

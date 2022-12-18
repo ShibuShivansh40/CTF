@@ -1,0 +1,14 @@
+Author: Sanjay C/Danny Tunitis
+Description
+
+Can you find the flag in file without running it?
+
+Hint - 1 : strings
+
+First, I checked the Manual page for the Strings.
+
+I found it its working and it is as follows : "strings <file_name"
+
+Then a list of strings appeared that were too large too read one by one. I just managed to read the string I want by using the grep command : "strings strings | grep picoCTF"
+
+Then, I just found the flag : picoCTF{5tRIng5_1T_827aee91}

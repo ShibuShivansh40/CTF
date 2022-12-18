@@ -1,0 +1,16 @@
+Author: syreal
+Description
+
+Using tabcomplete in the Terminal will add years to your life, esp. when dealing with long rambling directory structures and filenames: Addadshashanammu.zip
+
+Hint -1 : After `unzip`ing, this problem can be solved with 11 button-presses...(mostly Tab)...
+
+We will follow the hint after downloading the file.
+
+We will unzip this file first in the terminal, using the command : "unzip Addadshashanammu.zip"
+
+After unziping you will find a bunch of branching in the folder bypass then enter the last folder using the command : "cd Addadshashanammu/Almurbalarammi/Ashalmimilkala/Assurnabitashpi/Maelkashishi/Onnissiralis/Ularradallaku/"
+
+Then follow the basic process of converting the file "fang-of-haynekhtnamet" to an excutable file using "chmod +x fang-of-haynekhtnamet" and then opening it using "./fang-of-haynekhtnamet".
+
+And zap we got our flag : picoCTF{l3v3l_up!_t4k3_4_r35t!_a00cae70}

@@ -1,0 +1,40 @@
+Description
+Author: madStacks
+Description
+
+Find the flag being held on this server to get ahead of the competition http://mercury.picoctf.net:28916/
+
+
+Hint - 1 : Maybe you have more than 2 choices
+Hint - 2 : Check out tools like Burpsuite to modify your requests and look at the responses
+
+There are two Options:
+Red : This contains a form with a method as "GET"
+Blue : This contains a form with a method as "POST"
+
+Both the buttons cause a change in the colour
+
+Basically when I use the "GET" method in the BurpSuite we get "Red Colour" and when we use "POST" method we get "Blue Color"
+
+Try 1 :
+
+<form enctype="multipart/form-data" id="myform" method="post" action="http://application.com/vulnerable_script.php" >
+    <input type="hidden" name="argument" value="payload">
+</form>
+<script>document.myform.submit();</script>
+
+Using this payload, might help. This can be used in the "POST" method.
+
+This didn't work as no response was shown.
+
+Try 2:
+
+By changing the index.php to flag.php
+
+Try 3:
+
+I used anohter method of exploitation, I replace "GET" or "POST" with "PUT" the server got confused and showed me a question mark "?" instead of any name, but the response on browser was not very useful
+
+Try 4:
+
+I used another method of reuqest, "HEAD" as soon as I used it, the server gave me the flag i.e. picoCTF{r3j3ct_th3_du4l1ty_70bc61c4}

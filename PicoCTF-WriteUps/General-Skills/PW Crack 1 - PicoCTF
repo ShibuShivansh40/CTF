@@ -1,0 +1,16 @@
+Author: LT 'syreal' Jones
+Description
+
+Can you crack the password to get the flag? Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+Hint - 1 : To view the file in the webshell, do: $ nano level1.py
+
+Hint - 2 : To exit nano, press Ctrl and x and follow the on-screen prompts.
+
+Hint - 3 : The str_xor function does not need to be reverse engineered for this challenge.
+
+I just saw the Pytohn file and found the password that was to be entered on running the file.
+
+Then just type in the password and you will get the flag.
+
+The flag is : picoCTF{545h_r1ng1ng_56891419}

@@ -1,0 +1,33 @@
+Author: LT 'syreal' Jones
+Description
+
+Unzip this archive and find the flag.
+
+    Download zip file
+
+Hint - 1 : Can grep be instructed to look at every file in a directory and its subdirectories?
+
+I found the following commands on : https://seekfast.org/blog/search-text-in-documents/how-to-search-text-in-multiple-files-in-linux/
+
+1. Make the search case-insensitive with the "-i" option:
+grep -i 'searched-word' filename
+
+ 
+2. Search recursively in all files in a given directory with the "-r" option:
+grep -ir 'searched-word' '/directory'
+
+ 
+3. Search whole words only with the "-w" option:
+grep -irw 'searched-word' '/directory'
+
+ 
+4. Print the line numbers in which the searched word was found with the "-n" option:
+grep -irwn 'searched-word' '/directory'
+
+ 
+5. Search for multiple words syntax:
+grep -ir 'word1|word2|word3' '/directory'
+
+But I used the following command to get the flag : "grep -R "pico" *"
+
+And found the flag : picoCTF{gr3p_15_m4g1c_ef8790dc}

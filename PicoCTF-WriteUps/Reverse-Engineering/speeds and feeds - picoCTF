@@ -1,0 +1,16 @@
+Author: Ryan Ramseyer
+Description
+
+There is something on my shop network running at nc mercury.picoctf.net 33596, but I can't tell what it is. Can you?
+
+Hint - 1 : What language does a CNC machine use?
+
+As we know a CNC machine uses G-code for running. Hence we have the G-code when we run the command on our terminal : nc mercury.picoctf.net 33596
+
+So we will try to search for resources that can help to convert the G-code into something which we can understand.
+
+We will store the g-code first so that we can use it somewhere by : nc mercury.picoctf.net 33596 > g-code.txt
+
+Then I was getting prompted with SVGs whenever I typed conversion of G-code so I converted the file type of g-code form .txt to .gcode and I converted it using the website : https://cnc-apps.com/en/app/convert2svg
+
+ And I got the flag as : picoCTF{num3r1cal_c0ntr0l_e7749028}

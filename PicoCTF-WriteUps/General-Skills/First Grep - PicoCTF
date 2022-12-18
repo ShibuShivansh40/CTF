@@ -1,0 +1,10 @@
+Author: Alex Fulton/Danny Tunitis
+Description
+
+Can you find the flag in file? This would be really tedious to look through manually, something tells me there is a better way.
+
+Hint - 1 : grep tutorial
+
+This basic approach was to first make the file executable, using the command : "chmod +x file".
+
+Then, use the grep function and get the flag i.e. : picoCTF{grep_is_good_to_find_things_dba08a45}

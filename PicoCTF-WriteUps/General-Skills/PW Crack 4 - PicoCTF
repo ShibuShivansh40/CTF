@@ -1,0 +1,14 @@
+Author: LT 'syreal' Jones
+Description
+
+Can you crack the password to get the flag? Download the password checker here and you'll need the encrypted flag and the hash in the same directory too. There are 100 potential passwords with only 1 being correct. You can find these by examining the password checker script.
+
+Hint - 1 : A for loop can help you do many things very quickly.
+
+Hint - 2 : The str_xor function does not need to be reverse engineered for this challenge.
+
+Try - 1 :
+
+I tried to change the code a bit by myself after knowing about the working of the code.
+
+Here's the code, I simply used a for loop and iterated over every elements in the list and used as a password and this let me get the password and provided me the flag : picoCTF{fl45h_5pr1ng1ng_d770d48c}

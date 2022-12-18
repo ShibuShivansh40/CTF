@@ -1,0 +1,21 @@
+Author: madStacks
+Description
+
+A one-time pad is unbreakable, but can you manage to recover the flag? (Wrap with picoCTF{}) nc mercury.picoctf.net 11188 otp.py
+
+Hint - 1 : Maybe there's a way to make this a 2x pad.
+
+2f390b
+
+
+*****************Welcome to our OTP implementation!******************
+This is the encrypted flag!
+551e6c4c5e55644b56566d1b5100153d4004026a4b52066b4a5556383d4b0007
+
+
+Then we encrypt this key and get  : 636949000e3f4c0205394d5357684c07066a4d5007384955536c6c4808046f1c0555706848570237513e4d57511a1c3e4c0301694d0f02644b00013e48565672
+
+
+Now we will XOR encrypted flag to the decrypted message we get : 6w%LPj(ISo H..Y:FnO:LjO>.9:p5O..
+
+

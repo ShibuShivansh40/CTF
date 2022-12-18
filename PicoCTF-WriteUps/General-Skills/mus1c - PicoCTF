@@ -1,0 +1,26 @@
+Author: Danny
+Description
+
+I wrote you a song. Put it in the picoCTF{} flag format.
+
+Hints - 1 : Do you think you can master rockstar?
+
+As, you feel confused, I was also confused regarding that then I re-read the Hint and found that there si a programming language named "Rockstar".
+
+You can find the resource file to it : "https://codewithrockstar.com/code"
+
+Now we will try to find the way to crack it.
+
+And then I installed the module for python, using the command : "pip install rockstar-py"
+
+But on using the command "rockstar-py -i lyrics.txt -o <filename>.py" , I just got a python file, which didn't run, so basically I didn't get the idea of what I should do now?
+
+Nothing happened, I executed many commands but then nothing happend, and same error for a string was pooping up.
+
+So, I saw a write up and found that easiest way is to use the convertor : "https://codewithrockstar.com/online"
+
+And paste the lyrics to it and get ASCII Code and then convert it to text.
+
+And hence I got the answer as : "rrrocknrn0113r"
+
+And then I just put that into the flag : picoCTF{rrrocknrn0113r}

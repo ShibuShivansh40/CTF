@@ -1,0 +1,24 @@
+Author: Susie/Pandu
+Description
+
+Matryoshka dolls are a set of wooden dolls of decreasing size placed one inside another. What's the final one? Image: this
+
+Hint - 1 : Wait, you can hide files inside files? But how do you find them?
+
+Hint - 2 : Make sure to submit the flag as picoCTF{XXXXX}
+
+The resources I checked, it can basically Steganography to hide a file inside an image.
+
+It was a great to learn about the files that I can store inside a jpeg.
+
+We just to need to unzip the jpeg multiple times. And you will find a flag.txt and it will show the following : 
+
+p^@i^@c^@o^@C^@T^@F^@{^@b^@f^@6^@a^@c^@f^@8^@7^@8^@d^@c^@b^@d^@7^@5^@2^@f^@4^@7^@2^@1^@e^@4^@1^@b^@1^@b^@1^@b^@6^@>
+
+It can be deocded simply as : picoCTF{bf6acf878dcbd752f4721e41b1b1b66b}
+
+
+
+
+
+

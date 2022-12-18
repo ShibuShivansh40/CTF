@@ -1,0 +1,16 @@
+Author: syreal
+Description
+
+There is a nice program that you can talk to by using this command in a shell: $ nc mercury.picoctf.net 49039, but it doesn't speak English...
+
+Hint - 1 : You can practice using netcat with this picoGym problem: what's a netcat?
+
+Hint - 2 : You can practice reading and writing ASCII with this picoGym problem: Let's Warm Up
+
+It was an easy CTF, as you got everything in the hints only.
+
+Just use the command given i.e. "nc mercury.picoctf.net 49039"
+
+This will provide you with ASCII values, which can you furthur convert online to get the flag. 
+
+And you got the flag as : picoCTF{g00d_k1tty!_n1c3_k1tty!_3d84edc8}

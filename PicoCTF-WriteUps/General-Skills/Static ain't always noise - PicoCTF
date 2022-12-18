@@ -1,0 +1,22 @@
+Author: syreal
+Description
+
+Can you look at the data in this binary: static? This BASH script might help!
+
+Here we got two files one is "static" and the other is the "Bash". 
+
+Try 1 :
+
+Now we will go through some resources or try to make them executable using the command "chmod +x statc". 
+
+This made it an executable and look what we got. 
+
+So we are going right till now.
+
+Now I will try to use the Bash Script, use the same process as used above to get permissions and make it an executable.
+
+Now use the command " ./ltdis.sh static", this gave me this output. And we got our strings in the file named "static.ltdis.strings.txt".
+
+Now we will open the file using the command : "cat static.ltdis.strings.txt"
+
+And boom we got our flag : picoCTF{d15a5m_t34s3r_ae0b3ef2}
